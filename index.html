@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список продуктов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: calc(20% - 10px); /* 5 продуктов в строке */
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+        .product img {
+            width: 50px; /* Ширина иконки */
+            height: 50px; /* Высота иконки */
+        }
+        @media (max-width: 800px) {
+            .product {
+                width: calc(25% - 10px); /* 4 продукта в строке */
+            }
+        }
+        @media (max-width: 600px) {
+            .product {
+                width: calc(33.33% - 10px); /* 3 продукта в строке */
+            }
+        }
+        @media (max-width: 400px) {
+            .product {
+                width: calc(50% - 10px); /* 2 продукта в строке */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Что у меня в холодильнике:</h1>
+<div class="product-list">
+    <div class="product apple">
+        <img src="images\apple.jfif" alt="яблоко" >
+        <h2>Яблоко</h2>
+    </div>
+    <div class="product banana">
+        <img src="images\bananas.jfif" alt="банан">
+        <h2>Банан</h2>
+    </div>
+    <div class="product strawbery">
+        <img src="images\strawberry.png" alt="клубника">
+        <h2>Клубника</h2>
+    </div>
+    <div class="product">
+        <img src="icon4.png" alt="Продукт 4">
+        <h2>Продукт 4</h2>
+    </div>
+    <div class="product">
+        <img src="icon5.png" alt="Продукт 5">
+        <h2>Продукт 5</h2>
+    </div>
+    <div class="product">
+        <img src="icon6.png" alt="Продукт 6">
+        <h2>Продукт 6</h2>
+    </div>
+</div>
+
+<p>that’s all</p>
+
+</body>
+</html>
